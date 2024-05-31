@@ -7,8 +7,9 @@ public class Main {
         int n=scan.nextInt();
 
         for(int i=1;i<=n;i++){
-            if(i%2!=0 && i%10!=5 && i%3!=0 || i%9==0){
-                System.out.printf("%d ",i);
+            if(i%2!=0 && i%10!=5){
+                if(!(i%3==0&&i%9!=0))
+                    System.out.printf("%d ",i);
             }
         }
     }
