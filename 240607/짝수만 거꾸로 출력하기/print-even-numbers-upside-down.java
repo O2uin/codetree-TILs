@@ -10,7 +10,7 @@ public class Main {
         for(int i=0;i<n;i++){
             int a=scan.nextInt();
             if(a%2==0){
-                result=Integer.toString(a)+result+" ";
+                result=Integer.toString(a)+" "+result;
             }
         }
 
