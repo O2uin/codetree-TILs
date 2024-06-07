@@ -15,7 +15,7 @@ public class Main {
             for(int j=n-i;j>0;j--){
                 System.out.printf("%s ",a);
                 a++;
-                if(a==90){
+                if(a>90){
                     a=65;
                 }
             }
