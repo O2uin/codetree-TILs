@@ -21,10 +21,10 @@ public class Main {
             num[i]=a%b;
         }
 
-        for(int k=0;k<100;k++){
+        for(int k=0;k<count;k++){
             int index=0;
             for(int l=0;l<count;l++){
-                if(num[l]==k){
+                if(num[l]==num[k]){
                     index++;
                 }
             }
