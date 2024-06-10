@@ -9,26 +9,28 @@ public class Main {
         int sum=0;
         int count=0;
 
-        for(int i=a;i>1;i/=b){
+         int temp = a;
+        while (temp > 1) {
             count++;
+            temp /= b;
         }
 
-        int[] num=new int[count];
+        int[] num = new int[count];
 
-        for(int j=0;j<count;j++){
-            a=a/b;
-            num[j]=a%b;
+        temp = a;  // temp를 다시 a로 초기화
+        for (int j = 0; j < count; j++) {
+            num[j] = temp % b;
+            temp /= b;
         }
 
-        for(int k=0;k<100;k++){
-            int index=0;
-            for(int l=0;l<count;l++){
-                if(num[l]==k){
+        for (int k = 0; k < 100; k++) {
+            int index = 0;
+            for (int l = 0; l < count; l++) {
+                if (num[l] == k) {
                     index++;
                 }
             }
-            sum+=index*index;
-
+            sum += index * index;
         }
 
         System.out.println(sum);
