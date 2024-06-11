@@ -16,17 +16,18 @@ public class Main {
                 countR++;
             }
         }
+        int index=Math.abs(countL - countR);
 
         String result;
         if(countL>countR){
             //countL-countR 만큼 왼쪽으로 밀기
-            //앞에서부터 개수만큼 떼어서 뒤로
-            int index=countL-countR;
-             result=a.substring(index)+a.substring(0, index);
+            int id=index%a.length();
+             result=a.substring(id)+a.substring(0, id);
         }else if(countL<countR){
             //countR-countL 만큼 오른쪽으로 밀기
-            int index=a.length()-(countR-countL);
-            result=a.substring(index)+a.substring(0, index);
+            //int index=a.length()-(countR-countL);
+            int id=index%a.length();
+            result=a.substring(a.length()-id)+a.substring(0, a.length()-id);
         }else{
             result=a;
         }
