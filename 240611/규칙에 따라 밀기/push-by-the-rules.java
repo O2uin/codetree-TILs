@@ -25,7 +25,7 @@ public class Main {
              result=a.substring(index)+a.substring(0, index);
         }else if(countL<countR){
             //countR-countL 만큼 오른쪽으로 밀기
-            int index=countR-countL;
+            int index=a.length()-(countR-countL);
             result=a.substring(index)+a.substring(0, index);
         }else{
             result=a;
