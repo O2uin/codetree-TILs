@@ -8,12 +8,13 @@ public class Main {
         String str="";
         while(true){
             String a=scan.nextLine();
+            
+            if(a.equals("0")){
+                break;
+            }
             if(count%2==0){
                 //홀수번째(0부터 시작하니까 이게 맞음)저장
                 str+=a+"\r\n";
-            }
-            if(a.equals("0")){
-                break;
             }
             count++;
         }
