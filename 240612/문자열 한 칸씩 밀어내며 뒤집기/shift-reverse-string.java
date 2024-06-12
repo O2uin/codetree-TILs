@@ -13,6 +13,7 @@ public class Main {
         //결국엔 걍 앞에꺼가 뒤로가는거 아님? 이거 국어문제냐?
         //2->뒤문자 빼고 나머지 한칸씩 뒤로/뒤에 있던 문자를 앞으로
         //3->역순
+        StringBuilder sb = new StringBuilder(a);
         String result;
         for(int i=0;i<q;i++){
             num[i]=scan.nextInt();
@@ -28,15 +29,15 @@ public class Main {
                 a=result;
             }else{
                 //
-                result="";
-                for(int j=n-1;j>=0;j--){
-                    result+=String.valueOf(a.charAt(j));
+                char[] arr = a.toCharArray();
+                for (int j = 0; j < n / 2; j++) {
+                    char temp = arr[j];
+                    arr[j] = arr[n - j - 1];
+                    arr[n - j - 1] = temp;
                 }
-                System.out.println(result);
-                a=result;                
+                a = new String(arr);
+                System.out.println(a);
             }
         }
-
-
     }
 }
