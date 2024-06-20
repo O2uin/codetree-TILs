@@ -14,9 +14,9 @@ public class Main {
         }
 
         if(a==b){
-            System.out.println("1");
-        }else if(a!=b){
-            System.out.println("0");
+            System.out.print("1");
+        }else{
+            System.out.print("0");
         }
     }
 }
