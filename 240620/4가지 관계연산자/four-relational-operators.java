@@ -7,19 +7,20 @@ public class Main {
         int a=scan.nextInt();
         int b=scan.nextInt();
         if(a>=b){
-            System.out.println("1");
+            System.out.println("1");//1
             if(a!=b){
-                System.out.println("1");
-            }else{
-                System.out.println("0");
+                System.out.println("1");//2
+                System.out.println("0");//3
+            }else{//a==b
+                System.out.println("0");//2
+                System.out.println("1");//3
             }
-            System.out.println("0");
-            System.out.println("0");
+            System.out.println("0");//4
         }else{//a<b
-            System.out.println("0");
-            System.out.println("0");
-            System.out.println("1");
-            System.out.println("1");
+            System.out.println("0");//1
+            System.out.println("0");//2
+            System.out.println("1");//3
+            System.out.println("1");//4
         }
     }
 }
