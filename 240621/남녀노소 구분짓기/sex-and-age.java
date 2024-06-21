@@ -8,7 +8,7 @@ public class Main {
         int a=scan.nextInt();
 
         if(s==0){
-            if(a<20){
+            if(a<19){
                 //미자남
                 System.out.println("BOY");
             }else{
@@ -16,7 +16,7 @@ public class Main {
                 System.out.println("MAN");
             }
         }else{
-            if(a<20){
+            if(a<19){
                 //미자여
                 System.out.println("GIRL");
             }else{
