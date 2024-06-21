@@ -6,9 +6,18 @@ public class Main {
         Scanner scan=new Scanner(System.in);
         int n=scan.nextInt();
         if(n!=2 && n%2==0){
-            System.out.println("30");
+            if(n>7){
+                System.out.println("31");
+            }else{
+                System.out.println("30");
+            }
         }else if(n%2!=0){
-            System.out.println("31");
+            if(n>7){
+                System.out.println("30");
+            }else{
+                System.out.println("31");
+            }
+            
         }else if(n==2){
             System.out.println("28");
         }
