@@ -22,10 +22,10 @@ public class Main {
                         break;
                     }
                 }
-                if(index[i]){
+            }
+            if(index[i]){
                     max=num[i];
                 }
-            }
             
         }
 
