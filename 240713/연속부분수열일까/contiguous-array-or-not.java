@@ -18,6 +18,7 @@ public class Main {
         for(int j=0;j<n2;j++){
             num2[j]=scan.nextInt();
             str2+=String.valueOf(num2[j]);
+            
         }
 
         for(int k=0;k<n1;k++){
@@ -26,6 +27,8 @@ public class Main {
                 for(int x=0;x<n2;x++){
                     str1+=String.valueOf(num1[k+x]);
                 }
+                if(str1.equals(str2)) break;
+                else str1="";
             }
         }
 
