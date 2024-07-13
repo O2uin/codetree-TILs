@@ -24,11 +24,12 @@ public class Main {
         int max2=nums[index];
         for(int j=0;j<n;j++){
             if(nums[j]==max) count++;
+            else if(max2<nums[j]) max2=nums[j];
             if(count==2) {
                 max2=max;
                 break;
             }
-            else if(max2<nums[j]) max2=nums[j];
+            
         }
         System.out.printf("%d %d",max,max2 );
     }
