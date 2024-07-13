@@ -20,8 +20,11 @@ public class Main {
         for(int k=0;k<n1;k++){
             if(num1[k]==num2[0]){
                 check=false;
-                for(int x=0;x<n2;x++){
-                    if(num1[k+x+1]!=num2[x]) {
+                
+                for(int x=1;x<n2;x++){
+                    if(num1[k+x]==num2[x]) {
+                        check=false;
+                    }else{
                         check=true;
                         break;
                     }
@@ -29,6 +32,7 @@ public class Main {
             }else{
                 check=true;
             }
+            if(check=false) break;
         }
 
         if(check==true){
