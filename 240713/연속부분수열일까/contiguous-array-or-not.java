@@ -8,37 +8,30 @@ public class Main {
         int n2=scan.nextInt();
         int num1[]=new int[n1];
         int num2[]=new int[n2];
-        boolean check=false;
+        int index=0;
+        String str1="";
+        String str2="";
 
         for(int i=0;i<n1;i++){
             num1[i]=scan.nextInt();
         }
         for(int j=0;j<n2;j++){
             num2[j]=scan.nextInt();
+            str2+=String.valueOf(num2[j]);
         }
 
         for(int k=0;k<n1;k++){
-            if(num1[k]==num2[0]){
-                check=false;
-                
-                for(int x=1;x<n2;x++){
-                    if(num1[k+x]==num2[x]) {
-                        check=false;
-                    }else{
-                        check=true;
-                        break;
-                    }
+            if(num1[k]==num2[0]) {
+                if(k+n2>n1) break;
+                for(int x=0;x<n2;x++){
+                    str1+=String.valueOf(num1[k+x]);
                 }
-            }else{
-                check=true;
             }
-            if(check=false) break;
         }
 
-        if(check==true){
-            System.out.println("No");
-        }else{
-            System.out.println("Yes");
-        }
+        
+        if(str1.equals(str2)) System.out.println("Yes");
+        else System.out.println("No");
+        
     }
 }
