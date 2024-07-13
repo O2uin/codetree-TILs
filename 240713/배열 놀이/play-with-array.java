@@ -10,7 +10,8 @@ public class Main {
         int n=scan.nextInt();
         int q=scan.nextInt();
         int num[]=new int[n];
-
+        boolean check=false;
+        
         for(int i=0;i<n;i++){
             num[i]=scan.nextInt();
         }
@@ -23,21 +24,23 @@ public class Main {
             }else if(que==2){
                 //값이 b인 원소를 찾아 몇번째 원소인지, 여러개라면 가장 처음 것, 없으면 0
                 int b=scan.nextInt();
-                boolean check=false;
+                
                 for(int k=0;k<n;k++){
                     if(num[k]==b){
                         System.out.println(k+1);
                         check=true;
                         break;
-                    }
-                    if(check=false) System.out.println("0");
+                    }  
                 }
+                if(check==false) System.out.println("0");
+                check=false;
             }else if(que==3){
                 int a=scan.nextInt();
                 int b=scan.nextInt();
                 for(int x=a-1;x<b;x++){
                     System.out.printf("%d ",num[x]);
                 }
+                System.out.println();
             }
         }
     }
