@@ -19,6 +19,7 @@ public class Main {
                 maxi=i;
             }
         }
+        if(maxi==0) index=1;
         int count=0;
         int max2=nums[index];
         for(int j=0;j<n;j++){
