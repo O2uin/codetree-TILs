@@ -7,6 +7,7 @@ public class Main {
         int n=scan.nextInt();
         int num[]=new int[n];
         int min=-1;
+        int max=0;
         int index=0;
         //min 에 사서 max에 판매, 전체에서 min, max찾아다 빼기
 
@@ -18,7 +19,7 @@ public class Main {
                 index=i;
             }
         }
-        int max=num[index+1];
+        
 
         for(int j=index;j<n;j++){
             if(num[j]>max){
