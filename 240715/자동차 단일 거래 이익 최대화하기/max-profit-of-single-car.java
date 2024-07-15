@@ -6,27 +6,24 @@ public class Main {
         Scanner scan=new Scanner(System.in);
         int n=scan.nextInt();
         int num[]=new int[n];
-        int min=-1;
         int max=0;
-        int index=0;
+        int price=0;
         //min 에 사서 max에 판매, 전체에서 min, max찾아다 빼기
-
-        for(int i=0;i<n;i++){
-            num[i]=scan.nextInt();
-            if(min==-1) min=num[i];
-            if(num[i]<min){
-                min=num[i];
-                index=i;
-            }
+        //아니면 미리 빼서 가장 큰거?
+        for(int k=0;k<n;k++){
+            num[k]=scan.nextInt();
         }
-        
 
-        for(int j=index;j<n;j++){
-            if(num[j]>max){
-                max=num[j];
+        for(int i=0;i<n-1;i++){
+            for(int j=i;j<n;j++){
+                price=num[j]-num[i];
+                if(price>max){
+                    max=price;
+                }
             }
         }
 
-        System.out.print(max-min);
+
+        System.out.print(max);
     }
 }
