@@ -13,6 +13,7 @@ public class Main {
             str[i]=a.charAt(i);
         }
         save+=str[0];
+        if(a.length()==1) save+=count;
         for(int j=1;j<a.length();j++){
             if(str[j-1]==str[j]){
                 count++;
