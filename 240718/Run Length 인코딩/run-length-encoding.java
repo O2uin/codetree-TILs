@@ -23,6 +23,9 @@ public class Main {
                 save+=String.valueOf(count);
                 count=1;
                 save+=str[j];
+                if(j==a.length()-1){
+                    save+=count;
+                }
             }
             
         }
