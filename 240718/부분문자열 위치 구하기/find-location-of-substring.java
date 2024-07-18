@@ -14,6 +14,7 @@ public class Main {
             if(eq.equals(goal)){
                 System.out.print(i);
                 check=false;
+                break;
             }
         }
 
