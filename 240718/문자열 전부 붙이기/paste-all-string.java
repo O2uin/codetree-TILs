@@ -1,0 +1,16 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        // 여기에 코드를 작성해주세요.
+        Scanner scan=new Scanner(System.in);
+        int n=scan.nextInt();
+        String str="";
+        for(int i=0;i<n;i++){
+            String a=scan.next();
+            str+=a;
+        }
+
+        System.out.println(str);
+    }
+}
