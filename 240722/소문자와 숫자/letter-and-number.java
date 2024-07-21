@@ -7,7 +7,7 @@ public class Main {
         String str=scan.next();
         for(int i=0;i<str.length();i++){
             char a=str.charAt(i);
-            if(a>='a'&&a<='z' || a>='1'&&a<='9'){
+            if(a>='a'&&a<='z' || a>='0'&&a<='9'){
                 System.out.print(a);
             }else if(a>='A'&&a<='Z'){
                 System.out.print((char)(a+32));
