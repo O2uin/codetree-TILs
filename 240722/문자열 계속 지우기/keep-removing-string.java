@@ -29,7 +29,7 @@ public class Main {
                     }
                     a=str;
                     str="";
-                    i=0;
+                    i=-1;
                 }else{
                     ok=true;
                 }
