@@ -6,6 +6,7 @@ public class Main {
         Scanner scan=new Scanner(System.in);
         char a=scan.next().charAt(0);
         int b=(int)a+1;
+        if(b>'z') b='a';
         System.out.printf("%s",(char)b);
     }
 }
