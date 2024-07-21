@@ -12,7 +12,7 @@ public class Main {
                 else System.out.println(str.charAt(0));
                 break;
             }
-            if(a>str.length()){
+            if(a>=str.length()){
                 str=str.substring(0,str.length()-1);
             }else {
                 str=str.substring(0,a)+str.substring(a+1);
